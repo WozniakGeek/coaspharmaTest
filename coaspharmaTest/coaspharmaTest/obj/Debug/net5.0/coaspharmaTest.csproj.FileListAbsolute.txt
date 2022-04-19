@@ -1,0 +1,12 @@
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\bin\Debug\net5.0\coaspharmaTest.deps.json
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\bin\Debug\net5.0\coaspharmaTest.dll
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\bin\Debug\net5.0\ref\coaspharmaTest.dll
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\bin\Debug\net5.0\coaspharmaTest.pdb
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.AssemblyInfo.cs
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.dll
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\ref\coaspharmaTest.dll
+C:\Users\USER\source\repos\coaspharmaTest\coaspharmaTest\obj\Debug\net5.0\coaspharmaTest.pdb

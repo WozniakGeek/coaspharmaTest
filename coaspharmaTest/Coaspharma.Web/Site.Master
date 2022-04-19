@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Coaspharma.Web.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%--<title><%: Page.Title %> - Mi aplicación ASP.NET</title>--%>
+
+    <%--    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>--%>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <%--<asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />--%>
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <%-- <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">Inicio</a></li>
+                        <li><a runat="server" href="~/About">Acerca de</a></li>
+                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>--%>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <%--<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/App/home.aspx">
+                        <asp:Image ID="Image1" runat="server" Style="max-height: 50px; padding-left: 20px;" ImageUrl="~/lib/logo-out.png" />
+                    </asp:HyperLink>--%>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="nav1">
+                            <asp:HyperLink ID="btn_horarios" runat="server" NavigateUrl="~/App/home.aspx">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio
+                            </asp:HyperLink>
+                        </li>
+
+
+
+
+
+                        <%--  <li class="nav6">
+                            <asp:HyperLink ID="menu_configuracion" runat="server" NavigateUrl="~/App/admin/configuracion.aspx">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configuración
+                            </asp:HyperLink>
+                        </li>--%>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown nav8">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <asp:Label ID="lbl_user" runat="server" Text=""><%= Session["Name"] %></asp:Label>
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/App/Login_.aspx?log=1">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span> Cerrar sesión
+                                    </asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <%--  <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+            </footer>--%>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery-3.3.1.min.js"><\/script>')</script>
+        <script src="<%=ResolveClientUrl("~/js/")%>ie10-viewport-bug-workaround.js"></script>
+        <script src="<%=ResolveClientUrl("~/js/")%>jquery.dataTables.min.js"></script>
+        <script src="<%=ResolveClientUrl("~/Scripts/")%>chosen.jquery.min.js"></script>
+        <script src="<%=ResolveClientUrl("~/lib/")%>bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="<%=ResolveClientUrl("~/js/")%>sweetalert2.min.js"></script>
+        <asp:ContentPlaceHolder ID="Scripts" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
